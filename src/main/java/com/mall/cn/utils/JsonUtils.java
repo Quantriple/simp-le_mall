@@ -1,9 +1,8 @@
-package cn.enjoy.core.utils;
+package com.mall.cn.utils;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -62,16 +61,7 @@ public class JsonUtils {
 		}
 		return null;
 	}
-    /**
-     *
-     * @创建人 ZhouMin
-     * @创建时间 2016年4月12日
-     * @创建目的【json转换为ArrayList】
-     * @修改目的【修改人：，修改时间：】
-     * @param json
-     * @param clazz
-     * @return
-     */
+
     public static <T> ArrayList<T> json2ArrayList(String json, Class<T> clazz) {
         ArrayList<T> list = JsonUtils.json2Obj(json, new TypeReference<ArrayList<T>>() {});
         return list;
