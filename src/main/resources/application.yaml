@@ -1,0 +1,15 @@
+#port
+server:
+  port: 8080
+
+#datasource
+spring:
+  datasource:
+    druid:
+      password: root
+      username: F6zx3000C
+      url: jdbc:mysql://47.99.220.129:3306/mall?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+
+#mybits
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
